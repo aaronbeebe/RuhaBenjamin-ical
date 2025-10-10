@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4 ics
       - name: Run script
-        run: python ruha_events.py
+        run: python generate_calendar.py
       - name: Commit and push results
         run: |
           git config user.name "github-actions[bot]"
